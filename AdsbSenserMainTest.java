@@ -1,3 +1,5 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
@@ -5,8 +7,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-@RunWith(Suite.class)
-@SuiteClasses({ AdsbSentenceDisplayTest.class})
+//@RunWith(Suite)
+//@SuiteClasses({AdsbSentenceDisplayTest})
 
 public class AdsbSenserMainTest
 {
@@ -29,9 +31,9 @@ public class AdsbSenserMainTest
 
 	public static void main (String[] args)
 	{
-		Result result = JUnitCore.runClasses(AdsbSentenceDisplayTest.class);
-		for (Failure failure : result.getFailures()) {
-			System.out.println(failure.toString());
-		}
+//		Result result = JUnitCore.runClasses(AdsbSentenceDisplayTest.class);
+//		for (Failure failure : result.getFailures()) {
+//			System.out.println(failure.toString());
+//		}
 	}
 }
