@@ -27,13 +27,15 @@ public class AdsbSenserMainTest
 	{
 		AdsbSenserMain tester = new AdsbSenserMain();
 		assertNotNull("AS not gotten", tester.getSentence());
+
+		System.out.println("It worked");
 	}
 
 	public static void main (String[] args)
 	{
-//		Result result = JUnitCore.runClasses(AdsbSentenceDisplayTest.class);
-//		for (Failure failure : result.getFailures()) {
-//			System.out.println(failure.toString());
-//		}
+		Result result = JUnitCore.runClasses(AdsbSentenceDisplayTest.class);
+		for (Failure failure : result.getFailures()) {
+			System.out.println(failure.toString());
+		}
 	}
 }

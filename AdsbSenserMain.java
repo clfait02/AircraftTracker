@@ -11,4 +11,9 @@ public class AdsbSenserMain
 	{
 		return test;
 	}
+
+	AdsbSentence getSentence()
+	{
+		return new AdsbSentence();
+	}
 }
