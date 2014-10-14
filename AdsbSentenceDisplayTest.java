@@ -5,17 +5,14 @@
  * @author John Doe
  * @version 1.0
  */
-import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
-import org.junit.runner.notification.Failure;
-
+import org.junit.*;
 public class AdsbSentenceDisplayTest{
     /** 
      * Test the junit
      */
     @Test
-    public outPutFirstTest {
-        assertEquals("this test have to pass" , 0 , 0);
+    public void outPutFirstTest {
+        Assert.assertEquals("this test have to pass" , 0 , 0);
     }
 }
 
