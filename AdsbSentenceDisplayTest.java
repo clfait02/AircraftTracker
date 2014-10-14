@@ -5,15 +5,17 @@
  * @author John Doe
  * @version 1.0
  */
+
 import org.junit.*;
-public class AdsbSentenceDisplayTest{
-    /** 
-     * Test the junit
-     */
-    @Test
-    public void outPutFirstTest {
-        Assert.assertEquals("this test have to pass" , 0 , 0);
-    }
+
+public class AdsbSentenceDisplayTest
+{
+	/** 
+	 * Test the junit
+	 */
+	@Test
+	public void outPutFirstTest() {
+		Assert.assertEquals("this test has to pass" , 0 , 0);
+		Assert.assertEquals("this test has to fail" , 0 , 1);
+	}
 }
-
-

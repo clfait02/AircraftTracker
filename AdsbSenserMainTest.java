@@ -1,14 +1,4 @@
-import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
-import org.junit.runner.notification.Failure;
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
-import org.junit.runners.Suite.SuiteClasses;
-
-//@RunWith(Suite)
-//@SuiteClasses({AdsbSentenceDisplayTest})
 
 public class AdsbSenserMainTest
 {
@@ -27,15 +17,9 @@ public class AdsbSenserMainTest
 	{
 		AdsbSenserMain tester = new AdsbSenserMain();
 		assertNotNull("AS not gotten", tester.getSentence());
+		assertNull("AS gotten", tester.getSentence());
 
 		System.out.println("It worked");
 	}
 
-	public static void main (String[] args)
-	{
-		Result result = JUnitCore.runClasses(AdsbSentenceDisplayTest.class);
-		for (Failure failure : result.getFailures()) {
-			System.out.println(failure.toString());
-		}
-	}
 }
