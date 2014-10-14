@@ -21,7 +21,7 @@ public class AdsbSenserMainTest
 
 	//check if we get the ADS-B-sentence we want
 	@Test
-	public void getSentenceShouldReturnADSBSentence
+	public void getSentenceShouldReturnADSBSentence()
 	{
 		AdsbSenserMain tester = new AdsbSenserMain();
 		assertNotNull("AS not gotten", tester.getSentence());
