@@ -23,7 +23,7 @@ public class AdsbSenserMainTest
 	@Test
 	public void getSentenceShouldReturnADSBSentence
 	{
-		AdsbSenserMain tester = new AdsbSenserMain;
+		AdsbSenserMain tester = new AdsbSenserMain();
 		assertNotNull("AS not gotten", tester.getSentence());
 	}
 
